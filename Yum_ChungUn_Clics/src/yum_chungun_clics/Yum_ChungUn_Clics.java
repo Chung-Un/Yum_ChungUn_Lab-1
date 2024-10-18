@@ -21,27 +21,32 @@ public class Yum_ChungUn_Clics {
        
        System.out.println("Ingrese la cantidad de clics en su anuncio: ");
        clics= entrada.nextInt();
-       
-      if(clics<=20){
+      
+      switch (clics){
+      
+       case 1 : 
+       if(clics<=20){
        costo_ind= 0.80;
       }
-      else {if(clics>20 || clics<=60){
+       case 2: 
+        if(clics>20 || clics<=60){
          costo_ind=0.30;
       }
       
-      else{if(clics>60){
+       case 3:
+         if(clics>60){
           costo_ind=0.25;
       }
-      
+              }
       costo_total = clics*costo_ind;
       costo_promedio = costo_total/clics;
       
-      System.out.println("El costo promedio de sus clics es: " + costo_promedio + "El costo total sin impuestos es: "+costo_total);
+      System.out.println("El costo promedio de sus clics es: " + costo_promedio + "\nEl costo total sin impuestos es: "+costo_total);
       
       iva= (costo_total*0.16)+(costo_total);
       
-      System.out.println("Costo total es"+iva);
+      System.out.println("Costo total es "+iva);
       
       }
       
-      }}}
+      }

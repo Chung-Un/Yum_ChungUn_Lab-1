@@ -10,7 +10,15 @@ public class Yum_ChungUn_Planilla_de_empleados {
 
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        String nombre_empleado;
+        int horas_mensuales;
+        float tarifa_por_hora;
+        double salario_mensual;
         
+        System.out.println("**Programa para la realizacion de boleta del empleado/nIngrese su nombre completo: ");
+        nombre_empleado= entrada.nextLine();
+        
+        System.out.println("");
     }
     
 }

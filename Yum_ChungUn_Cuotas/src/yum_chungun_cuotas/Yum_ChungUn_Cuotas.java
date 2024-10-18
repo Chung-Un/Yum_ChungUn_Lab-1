@@ -14,7 +14,15 @@ public class Yum_ChungUn_Cuotas {
        int plazo_pago,interesmensual, comision_cuota, seguro_mensual;
        double total_pagar,cuota_mensual;
        
+       System.out.println("Bienvenido al programa para datos de tu prestamo\nIngrese el plazo de pago establecido(en meses):");
+       plazo_pago= entrada.nextInt();
        
+       System.out.println("Ingrese el interes aplicado al prestamo(porcentaje):");
+       interesmensual= entrada.nextInt();
+       interesmensual= interesmensual/100;
+       
+       
+               
     }
     
 }

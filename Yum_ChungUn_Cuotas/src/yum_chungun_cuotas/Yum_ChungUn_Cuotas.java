@@ -32,6 +32,13 @@ public class Yum_ChungUn_Cuotas {
        seguro_mensual = entrada.nextInt();
        seguro_mensual = seguro_mensual/100;
        
+       cuota_mensual= (prestamo * interesmensual)* Math.pow(1+ interesmensual, plazo_pago)/
+               (Math.pow(1+ interesmensual,plazo_pago)-1);
+       
+       total_pagar= cuota_mensual*plazo_pago;
+       
+       System.out.println("**** CUOTAS MENSUALES *******\nCuota de Pago Mensual: HNL"+ cuota_mensual + "\nTotal a Pagar: HNL"+ total_pagar);
+       
        
                
     }

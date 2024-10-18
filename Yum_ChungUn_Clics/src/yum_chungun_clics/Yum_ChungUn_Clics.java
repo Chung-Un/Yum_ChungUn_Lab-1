@@ -15,38 +15,34 @@ public class Yum_ChungUn_Clics {
     
     public static void main(String[] args) {
        Scanner entrada= new Scanner (System.in);
-       int clics; 
-       double costo_promedio,costo_total,iva;
-       double costo_ind=0;
+       int clicstotal; 
+       double costo_promedio,costo_total,iva,clics1,clics2,clics3;
+       
        
        System.out.println("Ingrese la cantidad de clics en su anuncio: ");
-       clics= entrada.nextInt();
+       clicstotal= entrada.nextInt();
+       
+       System.out.println("Ingrese la cantidad de clics en su primer grupo: ");
+       clics1 = entrada.nextDouble();
+       clics1 = clics1*0.30;
+       
+       System.out.println("Ingrese la cantidad de clics en su segundo grupo: ");
+       clics2 = entrada.nextDouble();
+       clics2= clics2*0.25;
+       
+       System.out.println("Ingrese la cantidad de clics en su tercer grupo: ");
+       clics3 = entrada.nextDouble();
+       clics3= clics3*0.80;
+       
+      costo_total= clics1+clics2+clics3;
+      costo_promedio = costo_total/clicstotal;
       
-      switch (clics){
-      
-       case 1 : 
-       if(clics<=20){
-       costo_ind= 0.80;
-      }
-       case 2: 
-        if(clics>20 || clics<=60){
-         costo_ind=0.30;
-      }
-      
-       case 3:
-         if(clics>60){
-          costo_ind=0.25;
-      }
-              }
-      costo_total = clics*costo_ind;
-      costo_promedio = costo_total/clics;
-      
-      System.out.println("El costo promedio de sus clics es: " + costo_promedio + "\nEl costo total sin impuestos es: "+costo_total);
+      System.out.println("El costo promedio de sus clics es: $" + costo_promedio + "\nEl costo total sin impuestos es: $"+costo_total);
       
       iva= (costo_total*0.16)+(costo_total);
       
-      System.out.println("Costo total es "+iva);
+      System.out.println("Costo total es con isv es $"+iva);
       
       }
       
-      }
+       } 

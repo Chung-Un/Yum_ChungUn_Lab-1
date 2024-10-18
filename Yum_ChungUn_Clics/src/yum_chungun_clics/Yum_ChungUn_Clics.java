@@ -4,6 +4,8 @@
  */
 package yum_chungun_clics;
 
+import java.util.Scanner;
+
 /**
  *
  * @author chung
@@ -21,6 +23,14 @@ public class Yum_ChungUn_Clics {
        
       if(clics<=20){
        costo_ind= 0.80;
+      }
+      if (clics>20 || clics<=60){
+         costo_ind=0.30;
+      }
+      
+      if(clics>60){
+          costo_ind=0.25;
+      }
       }
       
     }

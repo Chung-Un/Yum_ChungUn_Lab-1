@@ -9,14 +9,14 @@ import java.util.Scanner;
 public class Yum_ChungUn_Planilla_de_empleados {
 
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in).useDelimiter("\n");
         String nombre_empleado;
         int horas_mensuales;
         float tarifa_por_hora;
         double salario_semanal;
         
         System.out.println("**Programa para la realizacion de boleta del empleado\nIngrese su nombre completo: ");
-        nombre_empleado= entrada.nextLine();
+        nombre_empleado= entrada.next();
         
         System.out.println("Ingrese su cantidad de horas mensuales: ");
         horas_mensuales= entrada.nextInt();

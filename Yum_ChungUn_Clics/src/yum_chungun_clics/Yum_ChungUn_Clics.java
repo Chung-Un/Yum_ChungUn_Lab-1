@@ -16,7 +16,8 @@ public class Yum_ChungUn_Clics {
     public static void main(String[] args) {
        Scanner entrada= new Scanner (System.in);
        int clics; 
-       double costo_promedio,costo_ind,isv;
+       double costo_promedio,costo_total,iva;
+       double costo_ind=0;
        
        System.out.println("Ingrese la cantidad de clics en su anuncio: ");
        clics= entrada.nextInt();
@@ -24,15 +25,23 @@ public class Yum_ChungUn_Clics {
       if(clics<=20){
        costo_ind= 0.80;
       }
-      if (clics>20 || clics<=60){
+      else {if(clics>20 || clics<=60){
          costo_ind=0.30;
       }
       
-      if(clics>60){
+      else{if(clics>60){
           costo_ind=0.25;
       }
+      
+      costo_total = clics*costo_ind;
+      costo_promedio = costo_total/clics;
+      
+      System.out.println("El costo promedio de sus clics es: " + costo_promedio + "El costo total sin impuestos es: "+costo_total);
+      
+      iva= (costo_total*0.16)+(costo_total);
+      
+      System.out.println("Costo total es"+iva);
+      
       }
       
-    }
-    
-}
+      }}}

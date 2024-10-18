@@ -11,7 +11,6 @@ import java.util.Scanner;
  * @author chung
  */
 public class Yum_ChungUn_Clics {
-
     
     public static void main(String[] args) {
        Scanner entrada= new Scanner (System.in);

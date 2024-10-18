@@ -11,13 +11,12 @@ public class Yum_ChungUn_Cuotas {
     
     public static void main(String[] args) {
        Scanner entrada = new Scanner (System.in);
-       int plazo_pago,interesmensual, comision_cuota, seguro_mensual;
-       double total_pagar,cuota_mensual,prestamo;
+       double total_pagar,cuota_mensual,prestamo,plazo_pago,interesmensual, comision_cuota, seguro_mensual;
        
        System.out.println("Bienvenido al programa para datos de tu prestamo\nIngrese el plazo de pago establecido(en meses):");
        plazo_pago= entrada.nextInt();
        
-       System.out.println("Ingrese de cuánto es su prestamo:Lps.");
+       System.out.println("Ingrese de cuanto es su prestamo:Lps.");
        prestamo= entrada.nextDouble();
        
        System.out.println("Ingrese el interes aplicado al prestamo(porcentaje):");
@@ -37,7 +36,7 @@ public class Yum_ChungUn_Cuotas {
        
        total_pagar= cuota_mensual*plazo_pago;
        
-       System.out.println("**** CUOTAS MENSUALES *******\nCuota de Pago Mensual: HNL"+ cuota_mensual + "\nTotal a Pagar: HNL"+ total_pagar);
+       System.out.println("**** CUOTAS MENSUALES *******\nCuota de Pago Mensual: HNL "+ cuota_mensual + "\nTotal a Pagar: HNL "+ total_pagar);
        
        
                

@@ -21,6 +21,14 @@ public class Yum_ChungUn_Cuotas {
        interesmensual= entrada.nextInt();
        interesmensual= interesmensual/100;
        
+       System.out.println("Ingrese su comision por cuota(porcentaje): ");
+       comision_cuota= entrada.nextInt();
+       comision_cuota= comision_cuota/100;
+       
+       System.out.println("Ingrese el porcentaje de seguro mensual(porcentaje): ");
+       seguro_mensual = entrada.nextInt;
+       seguro_mensual = seguro_mensual/100;
+       
        
                
     }
